@@ -1,7 +1,9 @@
-// Netlify Function: scrape_youtube
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   return {
     statusCode: 200,
-    body: JSON.stringify({ platform: "youtube", data: "sample data" })
+    body: JSON.stringify({
+      platform: "youtube",
+      data: ["Digital Art Shorts", "Speedpaints", "Procreate Tutorials"]
+    }),
   };
-};
+}
