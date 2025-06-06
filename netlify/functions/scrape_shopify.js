@@ -1,7 +1,9 @@
-// Netlify Function: scrape_shopify
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   return {
     statusCode: 200,
-    body: JSON.stringify({ platform: "shopify", data: "sample data" })
+    body: JSON.stringify({
+      platform: "shopify",
+      data: ["Printable Wall Art", "Abstract Backgrounds", "Modern Line Art"]
+    }),
   };
-};
+}
