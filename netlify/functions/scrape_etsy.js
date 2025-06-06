@@ -1,7 +1,9 @@
-// Netlify Function: scrape_etsy
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   return {
     statusCode: 200,
-    body: JSON.stringify({ platform: "etsy", data: "sample data" })
+    body: JSON.stringify({
+      platform: "etsy",
+      data: ["Digital Art Bundle", "Watercolor Clipart", "SVG Logo Kit"]
+    }),
   };
-};
+}
