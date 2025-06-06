@@ -1,7 +1,9 @@
-// Netlify Function: scrape_facebook
-exports.handler = async function(event, context) {
+export async function handler(event, context) {
   return {
     statusCode: 200,
-    body: JSON.stringify({ platform: "facebook", data: "sample data" })
+    body: JSON.stringify({
+      platform: "facebook",
+      data: ["Trending Art Pages", "Group Discussions", "Digital Artist Highlights"]
+    }),
   };
-};
+}
