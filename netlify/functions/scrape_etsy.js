@@ -1,4 +1,4 @@
-export async function handler(event, context) {
+exports.handler = async function (event, context) {
   return {
     statusCode: 200,
     body: JSON.stringify({
@@ -6,4 +6,4 @@ export async function handler(event, context) {
       data: ["Digital Art Bundle", "Watercolor Clipart", "SVG Logo Kit"]
     }),
   };
-}
+};
